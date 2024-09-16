@@ -1,0 +1,116 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f3e9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+.main-title {
+    color: #ff6b6b;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-container {
+    text-align: center;
+    width: 50%;
+}
+
+/* Estilos para el select (dropdown) */
+select {
+    width: 85%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f3e9;
+    border: 2px solid #ff6b6b;
+    border-radius: 5px;
+    appearance: none; /* Oculta la flecha predeterminada del navegador */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><polygon fill="%23ff6b6b" points="0,0 20,0 10,10"/></svg>'); /* Agrega una flecha personalizada */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+    cursor: pointer;
+}
+
+select:focus {
+    outline: none;
+    border-color: #ff4040;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 80%;
+    border: 2px solid #ff6b6b;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #ff6b6b;
+    margin-top: 20px;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff4040;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.hidden {
+    display: none;
+}
+
+.image-container {
+    width: 20%;
+}
+
+.illustration {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .form-container, .image-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutoría Amigo Secreto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-title">Tutoría Amigo Secreto</h1>
+        <div class="content">
+            <!-- Ilustraciones de amistad y amor -->
+            <div class="image-container">
+                <img src="./assets/firends3.png" alt="Amigos" class="illustration">
+            </div>
+
+            <!-- Formulario -->
+            <div class="form-container">
+                <form id="secretForm">
+                    <!-- Selección del semestre -->
+                    <label for="semester">Selecciona tu semestre:</label>
+                    <select id="semester" required>
+                        <option value="">Seleccionar semestre</option>
+                        <option value="primero">Primer Semestre</option>
+                        <option value="cuarto">Cuarto Semestre</option>
+                    </select>
+                    <br>
+                    <!-- Dropdown de nombres -->
+                    <label for="name">Selecciona tu nombre:</label>
+                    <select id="name" required>
+                        <option value="">Seleccionar nombre</option>
+                    </select>
+
+                    <button type="submit">Descubrir Amigo Secreto</button>
+                </form>
+                <div id="result" class="hidden">
+                    <p>Tu amigo secreto es: <span id="friendName"></span></p>
+                </div>
+            </div>
+
+            <!-- Otra ilustración de amistad y amor -->
+            <div class="image-container">
+                <img src="./assets/friends2.png" alt="Amor" class="illustration">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
